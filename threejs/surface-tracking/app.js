@@ -125,7 +125,7 @@ class OxExperience {
         if (intersects.length > 0 && intersects[0].object == this._floor) {
             // Load a 3D model and add it to the scene over touched position
             const gltfLoader = new GLTFLoader();
-            gltfLoader.load("bear.glb", (gltf) => {
+            gltfLoader.load("wine.glb", (gltf) => {
                 const model = gltf.scene;
                 const animations = gltf.animations;
                 model.position.set(intersects[0].point.x, intersects[0].point.y, intersects[0].point.z);
